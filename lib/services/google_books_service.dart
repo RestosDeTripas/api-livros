@@ -9,7 +9,7 @@ import '../models/livro_model.dart';
 
 class GoogleBooksService {
   final http.Client _client;
-    static const String _apiKey = 'AIzaSyAEefE3XwYBlBb3nJ3l1QD8mcyF8uHTM5k';
+    static const String _apiKey = 'XXXXXXXXXXXXXXXXXXXXXXXXXX';
 
   GoogleBooksService({http.Client? client}) : _client = client ?? http.Client();
 
@@ -36,7 +36,6 @@ class GoogleBooksService {
       for (final q in queries) {
         final res = await _fetchForQuery(q);
         results.add(res);
-        // Wait 150ms between requests to stay friendly with Google API limiters
         await Future.delayed(const Duration(milliseconds: 150));
       }
 
