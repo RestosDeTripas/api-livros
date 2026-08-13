@@ -55,5 +55,3 @@ Limitações conhecidas da API / do app:
 - Resultados dependem dos termos de pesquisa e da disponibilidade da API.
 - A estratégia de relevância usa a posição nos resultados como proxy, o que não é perfeito.
 - Não há paginação extensa: cada consulta usa `maxResults=20`.
-
-Observação: este projeto foi criado como exercício de aprendizado. O código foi escrito de forma didática e não copia diretamente qualquer repositório existente.
